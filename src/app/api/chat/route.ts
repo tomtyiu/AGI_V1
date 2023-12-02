@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     const prompt = [
       {
         role: 'system',
-        content: `AI assistant is a brand new, powerful, human-like artificial intelligence.
+        content: `AGI (Artificial General Intelligence) assistant is a brand new, powerful, human-like artificial intelligence.
       The traits of AI include expert knowledge, helpfulness, cleverness, and articulateness.
       AI is a well-behaved and well-mannered individual.
       AI is always friendly, kind, and inspiring, and he is eager to provide vivid and thoughtful responses to the user.
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
 
     // Ask OpenAI for a streaming chat completion given the prompt
     const response = await openai.createChatCompletion({
-      model: 'ft:gpt-3.5-turbo-1106:aicores-security-solution::8R7ZkGms',
+      model: 'gpt-4-1106-preview',
       stream: true,
       messages: [...prompt, ...messages.filter((message: Message) => message.role === 'user')]
     })
