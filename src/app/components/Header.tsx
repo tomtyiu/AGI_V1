@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PineconeLogo from "../../../public/pinecone.svg";
 import VercelLogo from "../../../public/vercel.svg";
-import EPISTEAI from "../../../public/EPISTEAI.svg";
+import EpistemeGPT from "../../../public/EpistemeGPTs.svg";
 
 export default function Header({ className }: { className?: string }) {
   return (
@@ -10,10 +10,10 @@ export default function Header({ className }: { className?: string }) {
     >
       <div className="text-4xl ml-3 mr-3"></div>
       <Image
-        src={EPISTEAI}
-        alt="EPISTEAI-logo"
-        width="160"
-        height="50"
+        src={EpistemeGPT}
+        alt="EpistemeGPT-logo"
+        width="100"
+        height="100"
         className="mr-3 mt-3"
       />
     </header>
